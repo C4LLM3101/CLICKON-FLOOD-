@@ -22,7 +22,7 @@ bannar= """
           ░  ░   ░ ░     ░ ░    ░    
                               ░      
 
-                       created by :- 101                         
+                       created by :        1 ~~~~~0~~~~~ 1                          
 """
 def merry():
 	bannar_color = colored.fg("orange_red_1") + colored.attr("bold")
@@ -35,7 +35,7 @@ def merry():
 #print(ascii_art)
 
 # Ask the user if they want to run the code
-user_input = input('Do you want to run this code? ...............>>--(yes/no): ')
+user_input = input('Do you want to run this TOOL? ...............>>--(yes/no): ')
 
 if user_input.lower() == 'yes':
     # Twilio Account SID and Auth Token
