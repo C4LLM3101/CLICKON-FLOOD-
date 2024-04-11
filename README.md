@@ -59,7 +59,7 @@ it is use for education ⚠ perpose only i am not responsible any misuse 👆�
 
 3. After that, what changes have been made in the nano editor, verify once, otherwise an error may occur.
 
- 4. And enjoy this together
+ 4. And enjoy 👽  this together 
 
 
 
