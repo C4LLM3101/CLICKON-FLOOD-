@@ -16,3 +16,11 @@ def handle_call():
 if __name__ == '__main__':
     print('Starting on port', PORT)
     app.run(port=PORT)
+
+      ##Flask is a lightweight and versatile web framework for Python that allows developers to build web applications quickly and efficiently. 
+
+      # future of the flask :-
+                             #1) Enhanced Performance: 
+                             #2) Modern Technology Integration
+                             #3) Continued Development
+                             #4) Community Support 

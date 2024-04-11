@@ -39,6 +39,7 @@ it is use for education ⚠ perpose only i am not responsible any misuse 👆�
   git clone <"url of your repo">
   cd dir_name
   ls 
+  chmod +x *
   python3 file_name.py 
 ```
 ## work on :- 
@@ -57,9 +58,9 @@ it is use for education ⚠ perpose only i am not responsible any misuse 👆�
 
 2. Before that you have to make an account to guarantee the api , after making the account copy and paste all the required data.
 
-3. After that, what changes have been made in the nano editor, verify once, otherwise an error may occur.
+3. After that, what changes have been made in the nano editor, verify once, otherwise an error may occur.save the modification and after run it 
 
- 4. And enjoy 👽  this together 
+4. And enjoy 👽  this together 
 
 
 
