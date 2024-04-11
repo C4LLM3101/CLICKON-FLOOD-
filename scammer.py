@@ -1,4 +1,5 @@
-from colorama import init, Fore
+from colorama import init 
+from colorama import Fore, Style
 from twilio.rest import Client
 import time , sys 
 import pyfiglet
@@ -6,35 +7,24 @@ import colored
 from colored import stylize , fg , attr
 
 # Initialize colorama
+
 init()
 
-# Generate ASCII art
-bannar= """
+def display_banner(): 
+    banner = "                                                          █████████╗     ██████╗ ██████╗██████╗     \n"
+    banner += "                                                         ██╔════██║    ██╔═══████╔═══████╔══██╗    \n"
+    banner += "                                                         █████╗ ██║    ██║   ████║   ████║  ██║    \n"
+    banner += "                                                         ██╔══╝ ██║    ██║   ████║   ████║  ██║    \n"
+    banner += "                                                         ██║    ███████╚██████╔╚██████╔██████╔╝   \n" 
+    banner += "                                                         ╚═╝    ╚══════╝╚═════╝ ╚═════╝╚═════╝   \n "
+    banner += "                                                            created by 101\n"       
 
-  ███████▓    ▒█████  ▒█████ ▓█████▄ 
-▓██   ▓██▒   ▒██▒  ██▒██▒  ██▒██▀ ██▌
-▒████ ▒██░   ▒██░  ██▒██░  ██░██   █▌
-░▓█▒  ▒██░   ▒██   ██▒██   ██░▓█▄   ▌
-░▒█░  ░██████░ ████▓▒░ ████▓▒░▒████▓ 
- ▒ ░  ░ ▒░▓  ░ ▒░▒░▒░░ ▒░▒░▒░ ▒▒▓  ▒ 
- ░    ░ ░ ▒  ░ ░ ▒ ▒░  ░ ▒ ▒░ ░ ▒  ▒ 
- ░ ░    ░ ░  ░ ░ ░ ▒ ░ ░ ░ ▒  ░ ░  ░ 
-          ░  ░   ░ ░     ░ ░    ░    
-                              ░      
+    banner = Fore.RED + banner  # Set the color to dark red
+    banner += Style.RESET_ALL  # Reset the color to default after the banner
 
-                       created by :        1 ~~~~~0~~~~~ 1                          
-"""
-def merry():
-	bannar_color = colored.fg("orange_red_1") + colored.attr("bold")
-	for i in bannar:
-		time.sleep(0.00000000000001)
-		sys.stdout.write(stylize(i, bannar_color))
-		sys.stdout.flush()
-#ascii_art = pyfiglet.figlet_format(ascii_text)
+    print(banner)
 
-#print(ascii_art)
-
-# Ask the user if they want to run the code
+display_banner()
 user_input = input('Do you want to run this TOOL? ...............>>--(yes/no): ')
 
 if user_input.lower() == 'yes':
