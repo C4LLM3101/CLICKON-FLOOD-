@@ -8,7 +8,7 @@ from flask import Flask, request, Response
 init()
 
 def display_banner(): 
-    banner = "                                                          █████████╗     ██████╗ ██████╗██████╗     \n"
+    banner = "                                                          █████████╗    ██████╗ ██████╗  ██████╗     \n"
     banner += "                                                         ██╔════██║    ██╔═══████╔═══████╔══██╗    \n"
     banner += "                                                         █████╗ ██║    ██║   ████║   ████║  ██║    \n"
     banner += "                                                         ██╔══╝ ██║    ██║   ████║   ████║  ██║    \n"
@@ -28,10 +28,10 @@ def print_red(message):
     print(red_text)
 
 # Ask the user if they want to run the code
-user_input = input('Do you want to run this code? (yes/no): ')
+user_input = input('<<<-----Do you want to run this TOOL?----->>> (yes/no): ')
 
 if user_input.lower() == 'yes':
-    choice = input('Do you want to make a call or send an SMS? (call/sms): ')
+    choice = input('<<<<-----Do you want to make a call or send an SMS?----->>>> (call/sms): ')
     if choice.lower() == 'call':
         # Twilio Account SID and Auth Token
         account_sid = 'your acount sid here'
@@ -72,6 +72,11 @@ if user_input.lower() == 'yes':
             except Exception as e:
                 print(f'Error occurred: {e}')
                 break
+
+     
+    #One thing to keep in mind though is that if you want to do sms flood then it has to be done new api separately
+
+
     elif choice.lower() == 'sms':
         # Twilio Account SID and Auth Token
         account_sid = 'your acount sid here'
@@ -89,7 +94,7 @@ if user_input.lower() == 'yes':
         # Function to send SMS
         def send_sms():
             message = client.messages.create(
-                body='Hello. It has come to my attention that you are a scammer. I have decided to flood your phone lines to prevent you from scamming innocent people. I will not stop, until you stop. Stop being a criminal and I may consider ending the flood. This message will now repeat',
+                body='Hello. It has come to my attention that you are a scammer.',
                 from_=from_number,
                 to=to_number
             )
@@ -98,4 +103,4 @@ if user_input.lower() == 'yes':
         sms_res = send_sms()
         print(f'SMS sent. Message SID: {sms_res.sid}')
 else:
-    print_red('Code execution canceled.')
+    print_red('Code execution canceled..................................!')

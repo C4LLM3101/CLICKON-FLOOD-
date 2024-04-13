@@ -20,8 +20,8 @@ it is use for education ⚠ perpose only i am not responsible any misuse 👆�
 
 * ngrok and upx  are needed 
 * call api are needed 📞
-*  flask ⚱ framwork are needed 
-*  python,pip $ git are needed 
+* flask ⚱ framwork are needed 
+* python,pip $ git are needed 
 
 ## 🛠 Installation
 
@@ -41,6 +41,7 @@ it is use for education ⚠ perpose only i am not responsible any misuse 👆�
   ls 
   chmod +x *
   python3 file_name.py 
+  And enjoy 👽  this together 
 ```
 ## work on :- 
 
@@ -72,6 +73,12 @@ it is use for education ⚠ perpose only i am not responsible any misuse 👆�
 ## Feedback 💱
 
 If you have any feedback,Please suggest me something new in this code so that I can understand and  🛠 update, please reach out to us at fake@fake.com give me 
+
+
+## note :-
+         One thing to keep in mind though is that if you want to do sms flood then it has to be done new api separately
+
+
 
 
 ## License
