@@ -7,31 +7,39 @@ from flask import Flask, request, Response
 # Initialize coloram
 init()
 
-def display_banner(): 
-    banner = "                                                          █████████╗    ██████╗ ██████╗  ██████╗     \n"
-    banner += "                                                         ██╔════██║    ██╔═══████╔═══████╔══██╗    \n"
-    banner += "                                                         █████╗ ██║    ██║   ████║   ████║  ██║    \n"
-    banner += "                                                         ██╔══╝ ██║    ██║   ████║   ████║  ██║    \n"
-    banner += "                                                         ██║    ███████╚██████╔╚██████╔██████╔╝   \n" 
-    banner += "                                                         ╚═╝    ╚══════╝╚═════╝ ╚═════╝╚═════╝   \n "
-    banner += "                                                            created by 101\n"       
+def display_banner():
+    banner = '''
+      ▄▄▄▄▄▄▄▄▄▄▄  ▄            ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄  
+     ▐░░░░░░░░░░░▌▐░▌          ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░▌ 
+     ▐░█▀▀▀▀▀▀▀▀▀ ▐░▌          ▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌
+     ▐░▌          ▐░▌          ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌
+     ▐░█▄▄▄▄▄▄▄▄▄ ▐░▌          ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌
+     ▐░░░░░░░░░░░▌▐░▌          ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌
+     ▐░█▀▀▀▀▀▀▀▀▀ ▐░▌          ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌
+     ▐░▌          ▐░▌          ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌
+     ▐░▌          ▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄█░▌
+     ▐░▌          ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░▌ 
+      ▀            ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀  
+                                                               101
+    '''
 
-    banner = Fore.RED + banner  
-    banner += Style.RESET_ALL  
+    banner = Fore.MAGENTA + banner
+    banner += Style.RESET_ALL
 
     print(banner)
 
 display_banner()
+
 
 def print_red(message):
     red_text = Fore.RED + message + Fore.RESET
     print(red_text)
 
 # Ask the user if they want to run the code
-user_input = input('<<<-----Do you want to run this TOOL?----->>> (yes/no): ')
+user_input = input(Fore.RED +'<<<-----Do you want to run this TOOL?----->>> (yes/no): ' +Fore.RESET)
 
 if user_input.lower() == 'yes':
-    choice = input('<<<<-----Do you want to make a call or send an SMS?----->>>> (call/sms): ')
+    choice = input(Fore.GREEN +'<<<<-----Do you want to make a call or send an SMS?----->>>> (call/sms): ' + Fore.RESET)
     if choice.lower() == 'call':
         # Twilio Account SID and Auth Token
         account_sid = 'your acount sid here'
