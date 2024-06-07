@@ -53,10 +53,10 @@ def print_red(message):
     print(red_text)
 
 # Ask the user if they want to run the code
-user_input = input(Fore.RED +'<<<-----Do you want to run this TOOL?----->>> (yes/no): ' +Fore.RESET)
+user_input = input(Fore.RED +'<<<---------------Do you want to run this TOOL?--------------->>> (yes/no): ' +Fore.RESET)
 
 if user_input.lower() == 'yes':
-    choice = input(Fore.RED +'<<<<-----Do you want to make a call or send an SMS?----->>>> (call/sms): ' + Fore.RESET)
+    choice = input(Fore.RED +'<<<<---------------Do you want to make a call or send an SMS?--------------->>>> (call/sms): ' + Fore.RESET)
     if choice.lower() == 'call':
         # Twilio Account SID and Auth Token
         account_sid = 'your acount sid here'
